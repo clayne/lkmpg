@@ -18,7 +18,7 @@
 
 <h2 class='titleHead'>The Linux Kernel Module Programming Guide</h2>
 <div class='author'><span class='ecrm-1200'>Peter Jay Salzman, Michael Burian, Ori Pomerantz, Bob Mottram, Jim Huang</span></div><br />
-<div class='date'><span class='ecrm-1200'>April 13, 2025</span></div>
+<div class='date'><span class='ecrm-1200'>April 17, 2025</span></div>
                                                                   
 
                                                                   
@@ -2289,7 +2289,7 @@ So to help people writing <span class='obeylines-h'><span class='verb'><span cla
 </code>, <code>  <span class='ectt-1000'>next()</span>
 </code>, and <code>  <span class='ectt-1000'>stop()</span>
 </code>. The <code>  <span class='ectt-1000'>seq_file</span>
-</code> API starts a sequence when a user read the <span class='obeylines-h'><span class='verb'><span class='ectt-1000'>/proc</span></span></span> file.
+</code> API starts a sequence when a user reads the <span class='obeylines-h'><span class='verb'><span class='ectt-1000'>/proc</span></span></span> file.
 </p><!-- l. 1235 --><p class='indent'>   A sequence begins with the call of the function
 <code> <span class='ectt-1000'>start()</span>
 </code>. If the return is a non <code>  <span class='ectt-1000'>NULL</span>
@@ -6196,7 +6196,7 @@ do. The input device driver will allocate a new input structure with
 <code> <span class='ectt-1000'>input_register_device()</span>
 </code>.
 </p><!-- l. 2056 --><p class='indent'>   Here is an example, vinput, It is an API to allow easy
-development of virtual input drivers. The drivers needs to export a
+development of virtual input drivers. The driver needs to export a
 <code> <span class='ectt-1000'>vinput_device()</span>
 </code> that contains the virtual device name and
 <code> <span class='ectt-1000'>vinput_ops</span>
